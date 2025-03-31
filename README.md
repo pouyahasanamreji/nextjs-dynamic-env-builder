@@ -41,6 +41,7 @@ services:
       - BUILDER_GITHUB_BRANCH=main
       - BUILDER_ORG_NAME=organization
       - BUILDER_REPO_NAME=repository
+      - BUILDER_NETWORK_NAME=internal-dcoker-network
       - NEXT_PRIVATE_API_BASE_URL=https://api:3001
       - NEXT_PUBLIC_SITE_URL=https://example.com
     volumes:

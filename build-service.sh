@@ -95,6 +95,7 @@ build_docker_image() {
     log "Running build with args: $build_args"
     docker build $build_args \
         --target production \
+        --network ${BUILDER_NETWORK_NAME} \
         -t ${REGISTRY_PATH}:${GIT_SHA} \
         -t ${REGISTRY_PATH}:latest \
         .
